@@ -19,7 +19,27 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+/* Media query for adjusting styles for smaller screens */
+@media screen and (max-width: 768px) {
+  [class^="mai-"],
+  [class*=" mai-"] {
+    /* New styles for smaller screens here */
+    /* For example: */
+    font-size: 14px;
+    /* ... other adjusted styles ... */
+  }
+}
 
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+  [class^="mai-"],
+  [class*=" mai-"] {
+    /* New styles for larger screens here */
+    /* For example: */
+    font-size: 18px;
+    /* ... other adjusted styles ... */
+  }
+}
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
